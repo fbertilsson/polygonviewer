@@ -1,0 +1,36 @@
+﻿<Window x:Class="PolygonViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PolygonViewer"
+        mc:Ignorable="d"
+        Title="PolygonViewer" Height="450" Width="725">
+    <DockPanel>
+        <TextBlock
+            x:Name="status"
+            Height="40"
+            DockPanel.Dock="Bottom"/>
+        <TextBox 
+            x:Name="pointsText"
+            DockPanel.Dock="Left"
+            AcceptsReturn="True"
+            Background="BlanchedAlmond"
+            MinWidth="150"
+            MaxWidth="450"
+            TextWrapping="Wrap">
+            {X=4, Y=10}
+{X=6, Y=10}
+{X=6.776457, Y=9.897778}
+        </TextBox>
+        <Viewbox
+            Stretch="UniformToFill">
+            <Canvas 
+                x:Name="canvas"
+                MinWidth="50"
+                MinHeight="50"
+                Margin="20"
+                />
+        </Viewbox>
+    </DockPanel>
+</Window>
